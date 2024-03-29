@@ -1,0 +1,31 @@
+﻿<Window x:Class="DataSetPrakt1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataSetPrakt1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Hello" Grid.ColumnSpan="3" Grid.Row="1" Text="Добро пожаловать в Зоомагазин!" HorizontalAlignment="Center" FontWeight="Medium" FontSize="35"/>
+        <Button x:Name="clientyra" Grid.Row="3" Grid.Column="1" Content="Клиенты" Click="clients" FontSize="20" Background="Khaki"/>
+        <Button x:Name="petsi" Grid.Row="5" Grid.Column="1" Content="Питомцы" Click="pet" FontSize="20" Background="LemonChiffon"/>
+        <Button x:Name="ordersi" Grid.Row="7" Grid.Column="1" Content="Заказы" Click="order" FontSize="20" Background="Honeydew"/>
+    </Grid>
+</Window>
