@@ -38,5 +38,10 @@ namespace DataSetPrakt1
             main.Show();
             Close();
         }
+
+        private void DobavOrder(object sender, RoutedEventArgs e)
+        {
+            RedakOrder.Content = new StranicaOrders();
+        }
     }
 }

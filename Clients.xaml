@@ -14,11 +14,15 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <Border BorderBrush="Black" BorderThickness="2">
             <TextBlock x:Name="tekstik" Text="Таблица клиентов" Background="AntiqueWhite" FontSize="22" TextAlignment="Center"/>
         </Border>
         <Button x:Name="vixod" Grid.Column="1" Content="Выход" Click="bb" Background="BlanchedAlmond"/>
-        <DataGrid x:Name="GridDataClients" Grid.Row="1" Grid.ColumnSpan="2" Background="LightYellow"/>
+        <DataGrid x:Name="GridDataClients" Grid.Row="1" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="LightYellow" IsReadOnly="True"/>
+        <Button Grid.Row="4" Click="kormreda" Content="Управление таблицой" Width="190" HorizontalAlignment="Left"/>
+        <Frame x:Name="ReakNaim" Grid.ColumnSpan="4" Grid.RowSpan="4"/>
     </Grid>
 </Window>

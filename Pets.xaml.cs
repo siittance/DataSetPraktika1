@@ -33,5 +33,32 @@ namespace DataSetPrakt1
             main.Show();
             Close();
         }
+
+        private void tip(object sender, RoutedEventArgs e)
+        {
+            Typee type = new Typee();
+            type.Show();
+            Close();
+        }
+
+        private void naimenovanie(object sender, RoutedEventArgs e)
+        {
+            Naimenovanie naimenovanie = new Naimenovanie();
+            naimenovanie.Show();
+            Close();
+        }
+
+        private void feed(object sender, RoutedEventArgs e)
+        {
+            Korm korm = new Korm();
+            korm.Show();
+            Close();
+        }
+
+        private void ypravPeti(object sender, RoutedEventArgs e)
+        {
+            RedakPeti.Content = new StranicaPets();
+
+        }
     }
 }

@@ -55,7 +55,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Korm.xaml.cs">
+      <DependentUpon>Korm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Naimenovanie.xaml.cs">
+      <DependentUpon>Naimenovanie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StranicaClient.xaml.cs">
+      <DependentUpon>StranicaClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StranicaNaim.xaml.cs">
+      <DependentUpon>StranicaNaim.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StranicaOrders.xaml.cs">
+      <DependentUpon>StranicaOrders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StranicaPets.xaml.cs">
+      <DependentUpon>StranicaPets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StraniceKorm.xaml.cs">
+      <DependentUpon>StraniceKorm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StraniceTypee.xaml.cs">
+      <DependentUpon>StraniceTypee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Typee.xaml.cs">
+      <DependentUpon>Typee.xaml</DependentUpon>
+    </Compile>
     <Page Include="Clients.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Korm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -74,11 +105,43 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Naimenovanie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Orders.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StranicaClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StranicaNaim.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StranicaOrders.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StranicaPets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StraniceKorm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StraniceTypee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Typee.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -9,16 +9,22 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
             <ColumnDefinition Width="90"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <Border BorderBrush="Black" BorderThickness="2">
+        <Border BorderBrush="Black" BorderThickness="2" Grid.ColumnSpan="3">
             <TextBlock x:Name="tekstik" Text="Таблица заказов" Background="AntiqueWhite" FontSize="22" TextAlignment="Center"/>
         </Border>
-        <Button x:Name="exit" Grid.Column="1" Content="Выход" Click="vixod" Background="BlanchedAlmond"/>
-        <DataGrid x:Name="GridDataOrders" Grid.Row="1" Grid.ColumnSpan="2" SelectionChanged="GridDataOrders_SelectionChanged" Background="LightYellow"/>
+        <Button x:Name="exit" Grid.Column="3" Content="Выход" Click="vixod" Background="BlanchedAlmond"/>
+        <DataGrid IsReadOnly="True" x:Name="GridDataOrders" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="4" SelectionChanged="GridDataOrders_SelectionChanged" Background="LightYellow"/>
+        <Button Grid.Row="3" Click="DobavOrder" Content="Управление таблицой"/>
+        <Frame x:Name="RedakOrder" Grid.RowSpan="4" Grid.ColumnSpan="4"/>
     </Grid>
 </Window>

@@ -1,0 +1,38 @@
+﻿<Page x:Class="DataSetPrakt1.StranicaNaim"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DataSetPrakt1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StranicaNaim">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="90"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="Black" BorderThickness="2" Grid.ColumnSpan="6">
+            <TextBlock x:Name="tekstik" Text="Изменение таблицы наименования" Background="AntiqueWhite" FontSize="22" TextAlignment="Center"/>
+        </Border>
+        <DataGrid IsReadOnly="True" x:Name="GridDataNaim" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="7" Background="LightYellow" SelectionChanged="GridDataOrders_SelectionChanged"/>
+        <Button Grid.Column="6" Content="Выход" Background="BlanchedAlmond" Click="Poka" FontSize="20" Grid.RowSpan="4"/>
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Click="ydale" Content="Удаление" FontSize="20"/>
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="2" Content="Добавление" FontSize="20" Click="dobav"/>
+        <Button Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2" Content="Изменение" FontSize="20" Click="izmen"/>
+        <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Text="Введите наименование питомца:" FontSize="15"/>
+        <TextBox Grid.Row="2" Grid.ColumnSpan="2" x:Name="NAIM" Grid.Column="2"/>
+    </Grid>
+</Page>

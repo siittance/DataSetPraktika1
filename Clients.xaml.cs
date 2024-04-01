@@ -33,5 +33,10 @@ namespace DataSetPrakt1
             main.Show();
             Close();
         }
+
+        private void kormreda(object sender, RoutedEventArgs e)
+        {
+            ReakNaim.Content = new StranicaClient();
+        }
     }
 }
